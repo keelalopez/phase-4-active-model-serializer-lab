@@ -5,6 +5,7 @@ class AuthorsController < ApplicationController
     authors = Author.all 
     render json: authors, include: ['profile', 'posts', 'posts.posts_tags']
     # include: ['posts', 'posts.posts_tags']
+    # , include: ['profile', 'posts', 'posts.posts_tags']
   end
 
   def show
